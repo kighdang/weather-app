@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Kigh's Weather App</title>
+        <script defer src="index.js" charset="utf-8"></script>
+        <style> 
+        
+        #day1 { 
+            align-items: center;
+            text-align: center;
+            text-transform: capitalize;
+            float:left;  
+            background:Red; 
+            width:500px; 
+            height:280px; 
+        } 
+        #day2{ 
+            align-items: center;
+            text-align: center;
+            text-transform: capitalize;
+            float:left;  
+            background:Green; 
+            width:500px; 
+            height:280px; 
+        } 
+        #day3{ 
+            align-items: center;
+            text-align: center;
+            text-transform: capitalize;
+            float:left; 
+            background:blue; 
+            width:500px; 
+            height:280px; 
+        } 
+        body{
+            background:	#1e2b58;
+            color:white
+            
+        }
+
+        #current{
+            padding-top: 20px;
+            align-items: center;
+            text-align: center;
+            text-transform: capitalize;
+            width: 500px;
+            height: 280px;
+        }
+        </style>
+
+    </head>
+
+    <body>
+        <!-- current weather here -->
+        <h1>Current Weather</h1>
+        <div id="current">
+            <div id="currIcon"></div>
+            <div id="currText"></div>
+            <div id="temp"></div>
+        </div>
+
+        <!-- 3 day forecast here -->
+        <h1>3 Day Forecast</h1>
+        <div id="forecast">
+            
+            <div id="day1">
+                <h2>Day 1</h2>
+                <div id="icon1"></div>
+                <div id="text1"></div>
+                <div id="high1"></div>
+                <div id="low1"></div>
+            </div>
+           
+            <div id="day2">
+                <h2>Day 2</h2>
+                <div id="icon2"></div>
+                <div id="text2"></div>
+                <div id="high2"></div>
+                <div id="low2"></div>
+            </div>
+            
+            <div id="day3">
+                <h2>Day 3</h2>
+                <div id="icon3"></div>
+                <div id="text3"></div>
+                <div id="high3"></div>
+                <div id="low3"></div>
+            </div>
+        </div>
+
+
+
+    </body>
+</html>
