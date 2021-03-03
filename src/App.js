@@ -27,7 +27,7 @@ function App() {
 
 
   const fetchData = async () =>{
-    const res = await fetch("https://api.openweathermap.org/data/2.5/onecall?lat=33.441792&lon=-94.037689&appid=18844717bd89acba7f6a77acf78adb95&units=imperial")
+    // const res = await fetch()
     const data = await res.json()
 
     return data
