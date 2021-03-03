@@ -19,7 +19,7 @@ Time.defaultProps = {
 }
 
 Time.propTypes = {
-    time: PropTypes.number, 
+    time: PropTypes.number.isRequired, 
 }
 
 

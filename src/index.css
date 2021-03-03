@@ -65,7 +65,31 @@ code {
   justify-content: space-between;
   align-items: center;
   width: 790px;
+}
+
+.morning{
+  background-color: skyblue;
+}
+
+.evening{
+  background-color: navy;
+  max-width: 1000px;
+  overflow: auto;
+}
+
+h1{
+  color: white;
+}
+
+h2{
+  color: white;
+}
+
+h3{
+  color: white;
+}
 
 
-  
+p{
+  color: white
 }

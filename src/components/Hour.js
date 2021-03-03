@@ -1,21 +1,23 @@
 import React from 'react'
-import { icons } from 'react-icons'
 import { RiArrowDropDownLine } from 'react-icons/ri'
 import { WiRaindrop } from 'react-icons/wi'
 import { WiStrongWind } from 'react-icons/wi'
 
 
 
-const Hour = () => {
+const Hour = ({time, temp, icon, condition, humidity, wind}) => {
+    
+    const hour = new Date(time*1000).getHours()
+    
     return (
         <div className='hour'>
-            <p>1 pm </p>            
-            <h2>53&deg; </h2>
-            <img src="http://openweathermap.org/img/wn/01d.png"></img>
-            <p> Clear </p>
+            <p>{hour%12} {hour > 11 ? 'pm' : 'am'} </p>            
+            <h2>{Math.trunc(temp)}&deg; </h2>
+            <img src={"http://openweathermap.org/img/wn/" + icon + ".png"}></img>
+            <p> {condition} </p>
             
-            <p><WiRaindrop></WiRaindrop> 4% </p>
-            <p><WiStrongWind></WiStrongWind> NE 12 mph </p>
+            <p><WiRaindrop></WiRaindrop> {humidity}% </p>
+            <p><WiStrongWind></WiStrongWind> {wind} </p>
             <h1><RiArrowDropDownLine></RiArrowDropDownLine> </h1>
             
         </div>

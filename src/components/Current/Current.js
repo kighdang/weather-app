@@ -2,13 +2,13 @@ import CurrentTemp from './CurrentTemp'
 import CurrentIcon from './CurrentIcon'
 import PropTypes from 'prop-types'
 
-const Current = ({currentTemp, currentCondition, currentConditionDescription, currentIcon}) => {
+const Current = ({currentTemp, currentCondition, currentConditionDescription, currentIcon, currentHigh, currentLow, onClick}) => {
     return (
         <div>
             
-            <div className='current'>
+            <div className='current' onClick={onClick}>
                 <CurrentTemp temp={ currentTemp } condition={ currentCondition } conditionDescription={ currentConditionDescription}></CurrentTemp>
-                <CurrentIcon icon={ currentIcon }></CurrentIcon>
+                <CurrentIcon icon={ currentIcon } currentHigh={ currentHigh } currentLow={ currentLow }></CurrentIcon>
             </div>
         </div>
     )
